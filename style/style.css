@@ -1,23 +1,29 @@
 body{
+    width: 1000px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #222;
+    background-color: #000;
     color: white;
 }
 .container{
+    background-color: #222;
+    border: 1px solid orange;
     display:inline-block;
-    margin-left: 50px;
+    margin:60px 300px ;
+    padding: 50px;
+    border-radius: 20px;
+
 }
 
 /* cabeçalho da pagina */
 
-header{
-    margin: 50px auto;
-    width: 70%;
+.cabecalho{
+    margin: 40px auto;
+    width: 1150px;
     height: 20px;
     text-align: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 29px;
     padding: 5px;
 }
 li{
@@ -27,16 +33,33 @@ li{
 }
 
 li:hover{
+    padding-bottom: 5px;
     color: orange;
     border-bottom: 2px solid orange;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+/* navegaçao */
+
+.checkbtn{
+   font-size: 40px;
+   color: white;
+   float: center;
+   line-height: 80px;
+   
+   cursor: pointer;
+   display: none;  
+}
+#check{
+    display: none;
 }
 
 /* nome e profissao */
 
 .nome{
-
-    margin: 100px auto 50px 150px;
+    width: 290px;
+    margin: 100px auto 50px 100px;
     border-left: 1px solid orange;
     padding-left: 10px;
     font-size: 35px;
@@ -48,7 +71,7 @@ li:hover{
 /* botao contato */
 
 .contatos{
-    margin: 5px auto 50px 150px;
+    margin: 50px auto 50px 100px;
     padding: 10px ;
     background-color: #222;
     border: 1px solid orange;
@@ -66,7 +89,7 @@ a{
     text-decoration: none;
     color: white;
 }
-.aContatos:hover{
+.lista:hover{
     color: orange;
 }
 
@@ -74,63 +97,74 @@ a{
 
 .container-foto{
     display: inline-flex;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .foto{
-    margin-left: 400px;
-    width: 600px;
-    height: 600px;
+    margin-left: 140px;
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
 }
 
 /* botao ver mais e voltar para o topo */
 
-.ver-mais,.fa-solid{
-    display: flex;
-    font-size: 50px;
-    margin-top: 100px;
+.ver-mais{
+    margin-left: 35px;
 }
 .fa-sharp,.fa-solid{
     margin-left: 150px;
+    font-size: 50px; 
+}
+.fa-sharp:hover,.fa-solid:hover{
     color: orange;
 }
-.fa-solid{
-}
-
 /* main de informações */
 
 .main{
     align-items: center;
     background-color: #121212;
-    margin: 160px auto;
-    width: 90%;
+    margin: 250px auto;
+    width: 900px;
     height: 500px;
     border: 0.5px solid orange;
     border-radius: 15px;
     text-align: center;
 }
+ /* estilizaçao de textos das main */
 
+.titulo{
+    font-size: 40px;
+    padding: 10px;
+}
+.texto{
+    font-size: 25px;
+    margin: 50px;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 3rem;
+}
+ 
 /* logo da habilidade e configuraçoes de nome*/
 
 .hab-logo{
     display: inline-block;
-    margin: 50px auto;
-    width: 250px;
-    height: 250px;
+    margin: 80px auto;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 10px;
     padding: 10px;
 }
 .logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 120px;
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 }
 .nome-logo{
     font-size: 30px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .logo:hover, .projetos:hover{
     -webkit-transform: scale(1.1);
@@ -159,16 +193,18 @@ a{
 
 
 .redes-sociais{
+    border-top:1px solid orange;
+    border-radius: 10px;
     text-align: center;
     align-items: center;
-    margin: auto 5px auto 80px;
+    margin: 50px 5px auto 5px;
 }
 .copy{
     text-align: center;
-    margin: 15px auto;
-    font-size: 25px;
+    margin-top: 50px;
+    font-size: 20px;
 }
-.fa-brands{
+.fa-brands, .fa-sharp{
     text-align: center;
     align-items: center;
     margin: 50px 80px ;

@@ -12,3 +12,267 @@ only screen and (min-width: 992px)
 only screen and (min-width: 1280px)  */
 
 
+@media (max-width: 1200px){
+    body{
+        margin: 0;
+    }
+    .container{
+        width: 700px;
+        margin: 40px 80px;
+    }
+
+    /* cabeçalho da pagina */
+
+    .cabecalho{
+        margin: 30px auto;
+        width: 1000px;
+        height: 20px;
+        text-align: left;
+        align-items: left;
+        font-size: 20px;
+    }
+    li{
+        margin-right: 30px;
+    }
+
+    /* nome e profissao */
+
+    .nome{
+        width: 228px;
+        margin: 50px auto 50px 40px;
+        border-left: 1px solid orange;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    .ramo{
+        font-size: 20px;
+    }
+    
+    /* botao contato */
+
+    .contatos{
+        margin: 50px auto 50px 40px;
+        padding: 8px ;
+        background-color: #222;
+        border: 1px solid orange;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+
+    /* imagem */
+
+    .foto{
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+    
+    /* botao ver mais e voltar para o topo */
+
+    .ver-mais{
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    .fa-sharp,.fa-solid{
+        margin-left: 25px;
+        font-size: 40px; 
+    }
+
+    /* main de informações */
+
+    .main{
+        align-items: center;
+        background-color: #121212;
+        margin: 170px auto;
+        width: 700px;
+        height: 500px;
+        border: 0.5px solid orange;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+ /* estilizaçao de textos das main */
+
+    .titulo{
+        margin-top: 35px;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .texto{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+/* logo da habilidade e configuraçoes de nome*/
+
+    .hab-logo{
+        margin: 100px auto;
+        width: 150px;
+        height: 100px;
+
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .nome-logo{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    /* configurações projetos */
+
+    .logo_projetos{
+        width: 150px;
+        height: 110px;
+        margin: 70px auto;
+    }
+
+    /* informaçoes contato  */
+
+    .fa-brands, .fa-sharp{
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px){
+    body{
+        margin: 0;
+    }
+    .container{
+        width: 420px;
+        margin: 40px 20px;
+    }
+
+    /* checklista de busca */
+
+    .checkbtn{
+        display: inline-block;
+    }
+    nav.cabecalho{
+        float: left;
+        width: 0;
+    }
+    ul{
+        position:fixed;
+        width: 500px;
+        height: 500px;
+        top:190px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .cabecalho ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .cabecalho ul li{
+        font-size: 20px;
+    }
+    a:active, a:hover{
+        background: none;
+        
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+        /* nome e profissao */
+
+    .nome{
+        width: 100px;
+        margin: 10px auto 50px ;
+        border-left: 1px solid orange;
+        padding-left: 10px;
+        font-size: 30px;
+        }
+    .ramo{
+        font-size: 20px;
+    }
+
+     /* botao contato */
+
+     .contatos{
+        margin: 50px auto 50px;
+        padding: 8px ;
+        background-color: #222;
+        border: 1px solid orange;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+
+    /* imagem */
+
+    .foto{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+    .container-foto{
+        margin-top: 10;
+    }
+
+        /* botao ver mais e voltar para o topo */
+
+    .ver-mais{
+            margin-top: 80px;
+    }
+    .fa-sharp,.fa-solid{
+
+            font-size: 30px; 
+    }
+
+        /* main de informações */
+
+    .main{
+        margin: 170px -10px;
+        width: 440px;
+        height: 500px;
+    }
+
+     /* estilizaçao de textos das main */
+
+    .titulo{
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 5px;
+    }
+    .texto{
+        font-size: 20px;
+
+        letter-spacing: 2px;
+        line-height: 2rem;
+    }
+
+    /* logo da habilidade e configuraçoes de nome*/
+
+    .hab-logo{
+        margin: 30px auto;
+        width: 130px;
+        height: 100px;
+
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .nome-logo{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    /* configurações projetos */
+
+    .logo_projetos{
+        width: 130px;
+        height: 100px;
+        margin: 0px auto;
+    }
+
+    /* informaçoes contato  */
+
+    .fa-brands, .fa-sharp{
+        margin: 50px 40px ;
+        font-size: 30px;
+    }
+}
