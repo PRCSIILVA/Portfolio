@@ -1,17 +1,19 @@
-@media (max-width: 1200px){
+ @media (max-width: 1200px){
     body{
+        overflow-x: hidden;
         margin: 0;
     }
     .container{
+        
         width: 700px;
-        margin: 40px 80px;
+        margin: 50px 150px;
     }
 
     /* cabeçalho da pagina */
 
     nav{
         margin: 30px auto;
-        width: 1000px;
+        width: 10px;
         height: 20px;
         text-align: left;
         align-items: left;
@@ -19,6 +21,14 @@
     }
     li{
         margin-right: 30px;
+    }
+
+    /* Nomes da lista */
+
+    .nav-list{
+        width: 650px;
+
+        font-size: 20px;
     }
 
     /* nome e profissao */
@@ -120,7 +130,7 @@
         font-size: 40px;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 650px){
     body{
         margin: 0;
         overflow-x: hidden;
@@ -128,8 +138,8 @@
     }
     .container{
 
-        width: 45vh;
-        margin: 40px 10px;
+        width: 480px;
+        margin: 50px 10px;
     }
 
     nav{
@@ -142,18 +152,19 @@
          /*lista de busca */
     
     .nav-list{
+        margin-top: 80px;
         display: flex;
         position: absolute;
         top: 15vh;
-        right: 1.7vh;
-        width: 84.9vw;
-        height: 60vh;
+        right: 17px;
+        width: 525px;
+        height: 600px;
         background: #222;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(120%);
-        transition: transform 0.3s ease-in;
+        transform: translateX(110%);
+        transition: transform 0.5s ease-in;
         border: 1px solid orange;
         border-radius: 15px;
         
@@ -169,9 +180,7 @@
     .mobile-menu{
         display: block;
         cursor: pointer;
-        margin-right: 95vh;
-        
-
+        margin-right: 1100px;
     }
     .mobile-menu div{
         width: 32px;
@@ -187,13 +196,13 @@
 
     .nome{
         width: 100px;
-        margin: 10px auto 50px ;
+        margin: 0px auto 50px ;
         border-left: 1px solid orange;
         padding-left: 10px;
-        font-size: 30px;
+        font-size: 40px;
         }
     .ramo{
-        font-size: 20px;
+        font-size: 30px;
     }
 
      /* botao contato */
@@ -210,8 +219,9 @@
     /* imagem */
 
     .foto{
-        width: 150px;
-        height: 150px;
+        margin-left: 180px;
+        width: 190px;
+        height: 190px;
         border-radius: 100%;
     }
     .container-foto{
@@ -235,7 +245,7 @@
 
     .main{
         margin: 170px -10px;
-        width: 440px;
+        width: 500px;
         height: 500px;
     }
 
