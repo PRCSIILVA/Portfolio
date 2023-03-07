@@ -8,113 +8,217 @@
     <script defer src="https://kit.fontawesome.com/50726137b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/responsive.css">
+    <script src="./JavaScript/main.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-       <div class="container" id="inicio">
+       <div id="inicio">
+                                                <!-- Nome e informaçoes -->
 
-                                                             <!-- cabeçalho da pagina -->
+                    <div class="start">
+                        <h1 class="text">Olá eu sou <span class="name">Paulo</span></h1>
+                        <div class="job-title">Front-end developer</div>
+                        <h2 class="subtext">
+                            Fico feliz em ve-lo(a) por aqui. Espero que aproveite o conteúdo <br>
+                            e que eu possa te ajudar de alguma forma.
+                    
+                        <button class="btn"><a href="#qualificacoes" class="link">Conheçer mais</a></button>
+                    </div>
+                                                <!-- contatos -->
 
-                    <nav class="cabecalho">
-                        <div class="mobile-menu">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
+                    <div id="contato" class="redes-sociais">
+                                                
+                                                <a href="https://www.linkedin.com/in/paulo-ricardo-cruz-da-silva-308b5b185/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="https://github.com/PRCSIILVA" target="_blank"> <i class="fa-brands fa-github" ></i></a>
+                                                <a href="https://api.whatsapp.com/send?phone=5511960129107" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                                                <!-- foto e informaçoes complementares -->
+
+                    <section class="container-foto">
+                       <img src="./img/foto-perfil.png" class="foto">
+                    <div class="dados-geral">
+                        <h1 class="ramo"><i class="fa-solid fa-angles-right"></i>Desenvolvedor Front-end</h1>
+                       <h2 class="conhecimentos">Desenvolvedor Front-end com experiências em Html, Css, JavaScript puro, e Git</h2>
+                        <div class="info">
+                        Meu nome é Paulo Ricardo, tenho 24 anos e atuo na área de desenvolvimento a mais de 1 ano.
+                        E estou buscando uma primeira oportunidade no mecardo como desenvolvedor Jr.<br>
                         </div>
-                        <ul class="nav-list">
-                            <li class="lista">Inicío</li>
-                            <li><a href="#sobreMim" class="lista">Sobre Mim</a></li>
-                            <li><a href="#conhecimentos" class="lista">Conhecimentos</a></li>
-                            <li><a href="#habilidades" class="lista">Habilidades</a></li>
-                            <li><a href="#projetos" class="lista">Projetos</a></li>
-                        </ul>
-                    </nav >
+                        <div class="dados">
+                        Logo  abaixo tem o meu curriculo com informaçôes mais detalhadas sobre mim. Se preferir, pode entrar em contado atráves do meu e-mail.
+                        </div>
+                        <div>
+                            <a href="./Docs/Curriculo Paulo Ricardo.pdf" download class="download-pdf"> <button id="btn-download">  Baixar CV <i class="fa-solid fa-download"></i></button></a>
+                            <input value="pauloricardo451113@gmail.com" id="myInput">
+                            <button id="btn-copiar" onclick="Copiar()">Copiar o e-mail</button>
+                        </div> 
+                    </div>
+                    </section>
 
-                                                            <!-- complementos -->
-            
-                    <div class="container-foto">
-                            <div class="container-nome">
-                                <div class="nome">
-                                Paulo Ricardo <br>
-                                <div class="ramo">Desenvolvedor Front-End</div>
+                                                <!-- Qualificações e experiências -->
+                    <main>
+                        <h1 class="title-main" id="qualificacoes">Minhas qualificações e experiências</h1>
+                            <div class="cab">
+                                <div class="subtitle-main">
+                                    Qualificações
                                 </div>
-                    
-                                <button class="contatos"><a href="#contato" >Contatos</a></button> 
-                                <br>
+                                <div class="subtitle-main2">
+                                    Trabalhos
+                                </div>
                             </div>
-                        <img class="foto" src="./img/Foto-perfil.png" alt="Foto Perfil">   
-                    </div>
+                            <div class="timeline">
+                                <ul>
+                                    <li>
+                                        <div class="content">
+                                            <h3><i class="fa-solid fa-graduation-cap"></i> Fatec</h3>
+                                            <div class="subtitle-timeline">Informática para negócios</div>
+                                            <p>O curso une administração e informática. Entre as disciplinas relacionadas à administração de negócios estão: 
+                                                contabilidade, economia, estatística, matemática financeira, logística, gestão financeira e gestão de equipes. 
+                                                Na área de informática, as disciplinas são linguagem de programação, segurança da informação, redes de computadores, 
+                                                banco de dados, engenharia de software etc.
+                                            </p>
+                                        </div>
+                                            <div class="time">
+                                                <h4>2018 - 2021</h4>
+                                            </div>
+                                        <a href="./Docs/Diploma- Mauá - Paulo Ricardo Cruz da Silva-Manifesto.pdf" open target="_blank" class="certificado"><button class="btn-cert">Visualizar Certificado</button></a>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <h3><i class="fa-solid fa-briefcase"></i> Cartos Fintech</h3>
+                                            <div class="subtitle-timeline">Estágio / dev Jr</div>
+                                            <p>
+                                                Fui estagiário durante 1 ano, nesse período fui auxiliar administrativo. Na mesma empresa tive a experiência com o Front-end
+                                                onde era resposavél por estilizar os sites da empresa e implementar novas funções, neles eu utiliza html, css e php.
+                                            </p>
+                                        </div>
+                                            <div class="time">
+                                                <h4>2021 - 2022</h4>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <h3><i class="fa-solid fa-graduation-cap"></i>Anhanguera</h3>
+                                            <div class="subtitle-timeline">Análise e desenvolvimento de software</div>
+                                            <p>
+                                                O curso de Análise e Desenvolvimento de Sistemas da Anhanguera visa estudar todo tipo de sistema
+                                                 computacional e softwares. Na faculdade aprendem a projetar, documentar, testar, implementar e fazer
+                                                 a manutenção de softwares e sistemas computacionais. 
+                                            </p>
+                                        </div>
+                                            <div class="time">
+                                                <h4>2022-2023</h4>
+                                            </div>
+                                        <button class="btn-cert">Visualizar Certificado</button>
+                                    </li>
+                                    <div style="clear:both;"></div>
+                                </ul>
+                            </div>
 
-                                                            <!-- botao de ver mais -->
-                    <div class="ver-mais">
-                        <a href="#sobreMim" class="ver-mais"><i class="fa-sharp fa-solid fa-circle-down" ></i></a>
-                    </div>
+                                    <!-- Serviços prestados-->
+                        <section class="title-section">
+                            <Div class="services">Conheça quais são os meus <span>serviços</span></Div>
+                            <div class="subtext-services"> Metodologias que eu utilizo nos meus trabalhos</div>
+                        </section>
+                        <section class="text-skill">
+                            <div class="box-skill">
+                                <h1 class="title-skill">Desenvolvimento Web</h1>
+                                Um  desenvolvimento focado na criação de sites, páginas
+                                E-commerce ou outras aplicações, promovendo uma boa experiência
+                                e uma boa otimização do site.
+                            </div>
+                            <div class="box-skill">
+                                <h1 class="title-skill">Desenvolvimento Responsivo</h1>
+                                Aplicação web resposiva, disponivel paratodos os dispositivos móveis,
+                                tornando o site mais prático e acessivel. Ou aplicações 100% mobile, 
+                                como aplicativos.
+                            </div>
+                            <div class="box-skill">
+                                <h1 class="title-skill">Experiência do usuário</h1>
+                                Aplicações voltadas a um conjunto de elementos e fatores de um serviço,
+                                produto ou sistema que tem como objetivo promover uma boa experiência para 
+                                o usuário.
+                            </div>
+                        </section>
+                        <h1 class="title-conhecimento">
+                            Conhecimento
+                        </h1>
+                        <section class="skills-conhecimentos">
+                            <div class="skill-conhecimento"><i class="fa-brands fa-html5"></i>Html 5</div>
+                            <div class="skill-conhecimento"><i class="fa-brands fa-css3-alt"></i>Css</div>
+                            <div class="skill-conhecimento"><i class="fa-brands fa-square-js"></i>JavaScript</div>
+                            <div class="skill-conhecimento"><i class="fa-brands fa-git-alt"></i>Git</div>
+                        </section>
 
-                                                            <!-- informaçoes sobre mim -->
-
-                    <div class="main" id="sobreMim">
-                    <h1 class="titulo">Sobre Mim</h1>
-                    <div class="texto">Prazer, me chamo Paulo Ricardo Cruz Da Silva tenho 24 anos moro em mauá com meus pais,gosto de praticar exercicios fisicos e jogar basquete,
-                    e tambem gosto muito de estudar e de aprender sobre programação e tecnológias no geral.</div>
-                    </div>
-                    <div class="main" id="conhecimentos">
-                    <h1 class="titulo">Formações</h1>
-                    <div class="texto">
-                        •Escola: E.E. Prof.ª maria expedita silva, <br>
-                        Ensino Médio completo. <br>
-                        • Fatec Mauá, Informática para negócios, <br>
-                        Concluído em 01/12/2021 <br>
-                        • Anhanguera Analise e desenvolvimento de software, <br>
-                        Cursando Conclusão prevista para 01/12/2022
+                        <h1 class="title-conhecimento">
+                            Meus projetos
+                        </h1>
+                        <section class="skills" >          
+                             <div class="content-projetos">
+                                <div class="imagem">
+                                    <img src="./img/Projeto-Filmes.png" alt="" class="img-projeto">
+                                </div>
+                                <div class="texto">
+                                    <h2 class="title-projeto">Projeto Filmes</h2> <br>
+                                    <hr> <br>
+                                    <p class="text-projeto">
+                                        Nesse projeto desenvolvi uma tela simples com uma barra de pesquisa, 
+                                        onde eu pesquiso o nome de um filme e uma api me retorna todos os filmes
+                                         relacionados logo abaixo da barra.
+                                    </p>
+                                </div>
+                             </div>
+                             <div class="content-projetos">
+                                <div class="imagem">
+                                    <img src="./img/pokedex-projeto.png" alt="" class="img-projeto">
+                                </div>
+                                <div class="texto">
+                                    <h2 class="title-projeto">Projeto Pokedex</h2> <br>
+                                    <hr> <br>
+                                    <p class="text-projeto">
+                                        No projeto pokedex consumi uma api publica de pokemon, 
+                                        e utilizo alguns dados para descrever os pokemons como o nome, a imagem 
+                                        e a classe de cada um.
+                                    </p>
+                                </div>
+                             </div>
+                             <div class="content-projetos">
+                                <div class="imagem">
+                                    <img src="./img/esportFlix-projeto.png" alt="" class="img-projeto">
+                                </div>
+                                <div class="texto">
+                                    <h2 class="title-projeto">Projeto Netflix</h2><br>
+                                    <hr> <br>
+                                    <p class="text-projeto">
+                                        Aqui foi feito um clone do netflix, mas, foi feito apenas com filmes e documentários
+                                         relacionados a esporte no geral.
+                                    </p>
+                                </div>
+                             </div>
+                        </section>
+                        <!-- Botao para abrir github-->
+                        <div class="github-port">
+                            <a href="https://github.com/PRCSIILVA" target="_blank"><button class="btn-git"> Abrir Github</button></a>
                         </div>
-                    </div>
-                    <div class="main" id="habilidades">
-                        <h1 class="titulo">Habilidades</h1>
-                        <div class="hab-logo" ><a href="https://www.atlassian.com/br/git/tutorials/what-is-git" target="_blank">
-                            <img src="./img/git.png" alt="Git" class="logo"></a>
-                            <div class="nome-logo">Git</div>
-                        </div>
-                        <div class="hab-logo"> <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">
-                            <img src="./img/css.png" alt="css" class="logo"></a>
-                            <div class="nome-logo">Css</div>
-                        </div>
-                        <div class="hab-logo"> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
-                            <img src="./img/html.png" alt="html" class="logo"></a>
-                            <div class="nome-logo">Html</div>
-                        </div>
-                        <div class="hab-logo"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
-                            <img src="./img/javascript.png" alt="JavaScript" class="logo"> </a>
-                            <div class="nome-logo">JavaScript</div>
-                        </div>
+                        <h1 class="title-conhecimento">
+                            Networking
+                        </h1>
+                        <div class="text-networking">Você pode me enviar um e-mail ou conversar diretamente atraves das minha redes.</div>
+                        <section class="btns-netkorking">
+                            <a href="https://www.linkedin.com/in/paulo-ricardo-cruz-da-silva-308b5b185/" target="_blank"><button class="btn-redes"><i class="fa-brands fa-linkedin fa-link"></i>Linkedin</button></a>
+                            <a href="https://github.com/PRCSIILVA" target="_blank"><button class="btn-redes"><i class="fa-brands fa-github fa-git"></i>Github</button></a>
+                            <a href="https://api.whatsapp.com/send?phone=5511960129107" target="_blank"><button class="btn-redes"><i class="fa-brands fa-whatsapp fa-whats"></i>Whatsapp</button></a>
+                        </section>
+                    </main>
+                                                <!-- botao voltar ao topo -->
+                    <div class="voltar">
+                    <button class="btn-voltar"><i class="fa-solid fa-angles-up"></i><a href="#inicio" class="link-topo">Voltar para o topo</a></button>
                     </div>
 
-                                                            <!-- informações de projetos -->
-
-                    <div class="main" id="projetos">
-                    <h1 class="titulo">Projetos</h1>
-                    
-                    <div class="projetos">
-                        <img class="logo_projetos" src="./img/Projetos.jpg" alt="Projetos">
-                    </div>
-                    <div class="projetos">
-                        <img class="logo_projetos" src="./img/Projetos.jpg" alt="Projetos">
-                    </div>
-                    <div class="projetos">
-                        <img class="logo_projetos" src="./img/Projetos.jpg" alt="Projetos">
-                    </div>
-                    </div>
-                    <a class="topo" a href="#inicio"><i class="fa-solid fa-circle-up"></i></a>
-       
-
-                                                            <!-- contatos e informaçoes complementares -->
-
-                    <footer id="contato" class="redes-sociais">
-                        
-                        <a href="https://www.linkedin.com/in/paulo-ricardo-cruz-da-silva-308b5b185/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/PRCSIILVA" target="_blank"> <i class="fa-brands fa-github" ></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5511960129107" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
-                        <div class="copy"><i class="fa-regular fa-copyright"></i> 2022 | by Paulo Ricardo</div>
+                    <footer>
+                        <div class="copy">Paulo Ricardo <i class="fa-regular fa-copyright"></i> 2022</div>
                     </footer>
+
         </div>
 </body>
 </html>
