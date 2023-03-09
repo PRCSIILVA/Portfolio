@@ -1,0 +1,183 @@
+@media only screen and (max-width: 1404px){
+    #inicio{
+        overflow: hidden;
+    }
+    .text{
+        font-size: 40px;
+        text-align: center;
+        font-weight:normal;
+    }
+    .job-title{
+        text-align: center;
+        font-size: 70px;
+        font-weight: bold;
+    }
+    .foto{
+        max-width:300px;
+        max-height:300px;
+        border-radius: 50%;
+    }
+    .dados-geral{
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    .title-section{
+        display: flex;
+        margin: 100px 10px;
+    }
+    .services{
+        font-size: 35px;
+        width: 350px;
+        margin-left: 100px;
+    }
+    .box-skill{
+        margin: 10px 10px;
+        padding: 10px 30px;
+    }
+    .skill-conhecimento{
+        width: 100px;
+        margin: 5px;
+        font-size: 22px;
+        padding: 5px 90px;
+        border-radius: 8px;
+        cursor:default;
+    }
+    .fa-link, .fa-git, .fa-whats{
+        font-size: 25px;
+    }
+    .btn-redes{
+        font-size: 25px;
+        padding: 5px 10px;
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .text{
+        font-size: 40px;
+        text-align: center;
+        font-weight:normal;
+    }
+    .job-title{
+        text-align: center;
+        font-size: 70px;
+        font-weight: bold;
+    }
+    .dados-geral{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .title-section{
+        display: flex;
+        margin: 100px 10px;
+    }
+    .services{
+        font-size: 35px;
+        width: 350px;
+        margin-left: 100px;
+    }
+    .box-skill{
+        margin: 10px 10px;
+        padding: 10px 30px;
+    }
+    .skill-conhecimento{
+        width: 100px;
+        margin: 5px;
+        font-size: 22px;
+        padding: 5px 90px;
+        border-radius: 8px;
+        cursor:default;
+    }
+    .fa-link, .fa-git, .fa-whats{
+        font-size: 25px;
+    }
+    .btn-redes{
+        font-size: 25px;
+        padding: 5px 10px;
+        width: 340px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .timeline{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .title-main{
+        font-size: 40px;
+        padding: 0 20px;
+    }
+    .timeline:before{
+        left: 20px;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even){
+        width: 100%;
+        text-align: left;
+        padding-left: 50px; 
+        padding-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before{
+        left: 16px;
+    }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time{
+        top: -20px;
+        left: 50px;
+        right: inherit;
+    }
+    .title-section{
+        display: flex;
+        margin: 100px auto;
+    }
+    .services{
+        font-size: 30px;
+        width: 300px;
+        margin-left: 0;
+    }
+    .text-skill{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box-skill{
+        margin: 20px auto;
+        padding: 10px 30px;
+        width: 400px;
+    }
+    .skills-conhecimentos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 25px;
+    }
+    .fa-link, .fa-git, .fa-whats{
+        margin: 0;
+        float: left;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width:550px){
+
+    .timeline{
+        width: 100%;
+    }
+    .redes-sociais{
+        font-size: 30px;
+    }
+
+    .dados-geral{
+        justify-content: center;
+        margin:15px auto;
+    }
+    #btn-download, #btn-copiar{
+        margin: 30px auto;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+}

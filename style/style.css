@@ -12,6 +12,16 @@ body{
     background-color: black;
     color:white;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgba(0, 255, 255, 0.171);
+    border-radius: 10px;
+}
+
 .start{
     justify-content: center;
     margin-top: 100px;
@@ -57,6 +67,9 @@ input{
     cursor: pointer;
 }
 .redes-sociais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 50px;
     text-align: center;
     margin: 50px auto;
@@ -96,8 +109,8 @@ input{
 }
 .container-foto{
     display: flex;
-    margin-top: 50px;
-    margin-left: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .foto{
     max-width:500px;
@@ -167,32 +180,15 @@ input{
 /* main  qualificaçoes e experiencias*/
 
 .title-main, .title-conhecimento{
-    display: block;
-    margin: 150px auto 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
     font-size: 50px;
 }
-.cab{
-    display: flex;
-    margin: 50px auto;
-    justify-content: center;
-    margin-right: 39px;
-}
-.subtitle-main,.subtitle-main2{
-    padding: 15px 50px;
-    font-size: 25px;
-}
-.subtitle-main{
-    border-bottom: 1px solid rgb(119, 119, 119);
-    border-right: 1px solid rgb(119, 119, 119);   
-}
-.subtitle-main2{
-    border-bottom: 1px solid rgb(119, 119, 119);
-}
-
 .timeline{
     position: relative;
-    margin: -10px auto;
+    margin: 50px auto;
     padding: 40px 0;
     width: 1000px;
     box-sizing: border-box;
@@ -290,10 +286,12 @@ input{
     border-radius: 15px;
     box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.2);
 }
+
 /* section serviços */
 .title-section{
     display: flex;
-    margin: 100px 200px;
+    justify-content: left;
+    margin: 100px 150px;
 }
 .services{
     font-size: 40px;
@@ -310,6 +308,7 @@ input{
 .text-skill{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .box-skill{
     margin: 10px 30px;
@@ -326,7 +325,8 @@ input{
 .skills-conhecimentos{
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    flex-wrap: wrap;
+    margin-top: 35px;
 }
 .skills{
     display: flex;
@@ -343,7 +343,7 @@ input{
     width: 300px;
     margin: auto 30px;
     font-size: 30px;
-    padding: 5px 120px;
+    padding: 5px 100px;
     box-shadow: 0 0 0 3px rgba(24, 24, 24, 0.096);
     border-radius: 8px;
     cursor:default;
@@ -409,6 +409,7 @@ input{
 .btns-netkorking{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 .fa-link, .fa-git, .fa-whats{
@@ -470,7 +471,7 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #202020;
-    margin: 30px auto 30px;
+    margin: 30px auto;
     padding: 15px;
 }
 .copy{
