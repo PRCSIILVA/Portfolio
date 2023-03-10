@@ -288,6 +288,7 @@ input{
 }
 
 /* section serviços */
+
 .title-section{
     display: flex;
     justify-content: left;
@@ -341,7 +342,7 @@ input{
 .skill-conhecimento{
     background-color: #0f0f0f;
     width: 300px;
-    margin: auto 30px;
+    margin: auto 30px 15px;
     font-size: 30px;
     padding: 5px 100px;
     box-shadow: 0 0 0 3px rgba(24, 24, 24, 0.096);
@@ -439,6 +440,7 @@ input{
 }
 
  a{
+    color: white;
     text-decoration: none;
 }
 .voltar{
