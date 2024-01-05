@@ -292,7 +292,7 @@ input{
 .title-section{
     display: flex;
     justify-content: left;
-    margin: 100px 150px;
+    margin: 100px 250px;
 }
 .services{
     font-size: 40px;
@@ -355,11 +355,12 @@ input{
     font-size: 30px;
 }
 .img-projeto{
-    width: 100%;
-    height: 400px;
+    width: 600px;
+    height: 320px;
     filter: brightness(70%);
 }
 .title-projeto{
+    margin-top: 100px;
     color: white;
     font-size: 25px;
 }
